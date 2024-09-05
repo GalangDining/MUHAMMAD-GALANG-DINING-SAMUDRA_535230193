@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap');
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-image: linear-gradient(243deg, rgba(255,253,221,1) 13.4%, rgba(248,215,215,1) 82.1%);
+}
+
+.box-container {
+    background: linear-gradient(135deg, #a05f5f 0%, #f4d3d3 100%);
+    padding: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 15px 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.box-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: rgb(241, 241, 241);
+    margin: 0;
+}
+
+.box-content p {
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #f4b6b6;
+    color: #f1efef;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.9s ease;
+}
+
+button:hover {
+    background-color: #d19393;
+    transform: scale(1.05);
+}
+
+.hidden {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    height: auto;
+    transition: height 0.5s ease, opacity 0.5s ease;
+}
+
+#contactInfo p {
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+    margin: 5px 0;
+}
+
+#contactInfo p:hover {
+    color: #b36b6b;
+    transform: scale(1.02);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Thisis, .intro {
+    height: 110vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Aduh  {
+    font-size: 7em;
+    opacity: 0; 
+    transform: translateX(100px); 
+    transition: opacity 4s, transform 3s;
+    color: #7f5b5b;
+}
+
+#name {
+    font-size: 7em;
+    opacity: 0; 
+    transform: translateX(100px); 
+    transition: opacity 4s, transform 3s;
+    color: #7b709c;
+}
+
+.about-me, .pendidikan, .Keahlian, .Pengalaman {
+    font-size: 3em;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #855e5e;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.photo {
+    width: 200px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.details {
+    max-width: 500px;
+}
+
+.details h2, .details p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.pendidikan, .Keahlian, .Pengalaman {
+    font-size: 3em;
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #94875d;
+}
+s
+.pendidikan .content, .Keahlian .content, .Pengalaman .content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.pendidikan .photo, .Keahlian .photo, .Pengalaman .photo {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.sekolah, .keahlianGw, .web {
+    max-width: 600px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 2em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details {
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .photo {
+        width: 120px;
+    }
+}
